@@ -1,0 +1,13 @@
+@import "blocks";
+@import "utils";
+@import "typography";
+
+html {
+  font-family: 'Rubik', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}

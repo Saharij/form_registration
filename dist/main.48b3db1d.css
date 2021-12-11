@@ -1,0 +1,112 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/bg-1.49cbb7cd.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+.header__container {
+  text-align: center;
+}
+.header__bg-forms-1 {
+  position: absolute;
+  width: 138px;
+  height: 194px;
+  top: -50px;
+  right: 25%;
+  background-image: url(/section_1-svg_1.39c32460.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header__bg-forms-2 {
+  position: absolute;
+  left: -50px;
+  width: 220px;
+  height: 174px;
+  background-image: url(/section_1-svg_2.73446e54.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header__bg-forms-3 {
+  position: absolute;
+  right: -50px;
+  bottom: 55px;
+  width: 186px;
+  height: 186px;
+  background-image: url(/section_1-svg_3.ffbf55e3.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header__logo {
+  margin-bottom: 40px;
+}
+.header__title {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 500;
+  line-height: 73px;
+  text-align: center;
+  max-width: 587px;
+  margin-bottom: 40px;
+}
+.header__title-green {
+  color: #6ceec7;
+}
+.header__button-registration {
+  padding: 16px 50px 17px;
+  background-color: transparent;
+  border: 2px solid #6ceec7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.header__button-registration:hover {
+  color: #000;
+  background-color: #6ceec7;
+}
+
+.registration {
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/bg-2.4088d761.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+h2, h1 {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 500;
+  line-height: 73px;
+  text-align: center;
+  margin: unset;
+}
+
+a {
+  color: #6ceec7;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */

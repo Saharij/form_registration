@@ -1,0 +1,89 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+              url(/images/img-bgs/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__bg-forms {
+    &-1 {
+      position: absolute;
+      width: 138px;
+      height: 194px;
+      top: -50px;
+      right: 25%;
+      background-image: url(/images/bg-forms/section_1-svg_1.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &-2 {
+      position: absolute;
+      left: -50px;
+      width: 220px;
+      height: 174px;
+      background-image: url(/images/bg-forms/section_1-svg_2.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &-3 {
+      position: absolute;
+      right: -50px;
+      bottom: 55px;
+      width: 186px;
+      height: 186px;
+      background-image: url(/images/bg-forms/section_1-svg_3.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 73px;
+    text-align: center;
+    max-width: 587px; // must be 649px
+    margin-bottom: 40px;
+
+    &-green {
+      color: #6ceec7;
+    }
+  }
+
+  &__button-registration {
+    padding: 16px 50px 17px;
+    background-color: transparent;
+    border: 2px solid #6ceec7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover {
+      color: #000;
+      background-color: #6ceec7;
+    }
+  }
+}
