@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    crossorigin="anonymous"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  >
   <link rel="stylesheet" href="./styles/main.scss">
   <link rel="stylesheet" href="styles/style.css">
   <title>Registration</title>
@@ -19,8 +28,9 @@
       </div>
       <h1 class="header__title">
         Find the
-        <span class="header__title-green">
-          best place to rest
+        <span class="green">
+          best place</br>
+          to rest
         </span>
         while traveling
       </h1>
@@ -35,15 +45,122 @@
   <section class="registration" id="registration">
     <div class="registration__container">
       <h2 class="registration__title">
-        Sign Up and find the best place to rest while traveling
+        <span class="green">
+          Sign Up
+        </span>
+        and find the best place to rest while traveling
       </h2>
-      <form action="">
-        <input type="country">
+      <form
+        action=""
+        class="registration__form form"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-auto" >
+              <input
+                class="form__input"
+                type="text"
+                placeholder="First name"
+                required
+                style="padding: 0 50px;"
+              >
+              <img src="images/icons/first-name_icon.svg" alt="" class="form__input-icon">
+            </div>
+            <div class="col-12 col-md-auto">
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Second name"
+                required
+              >
+              <img src="images/icons/second-name_icon.svg" alt="" class="form__input-icon">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-auto">
+              <select class="form__select">
+                <option value="0">Country</option>
+                <option value="1">Afghanistan</option>
+                <option value="2">Albania</option>
+                <option value="3">Algeria</option>
+                <option value="4">Andorra</option>
+                <option value="5">Brazil</option>
+                <option value="6">Belgium</option>
+                <option value="7">China</option>
+                <option value="8">Germany</option>
+                <option value="9">Israel</option>
+                <option value="10">Italy</option>
+                <option value="11">Russia</option>
+                <option value="12">Switzerland</option>
+                <option value="13">Ukraine</option>
+                <option value="14">United Kingdom</option>
+                <option value="15">United States of America</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-auto">
+              <input
+                class="form__input"
+                type="tel"
+                placeholder="Phone"
+                required
+              >
+              <img src="images/icons/phone_icon.svg" alt="" class="form__input-icon">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-auto">
+              <input
+                class="form__input"
+                type="password"
+                placeholder="Password"
+                required
+              >
+              <img src="images/icons/password_icon.svg" alt="" class="form__input-icon">
+            </div>
+            <div class="col-12 col-md-auto">
+              <input
+                class="form__input"
+                type="password"
+                placeholder="Confirm password"
+                required
+              >
+              <img src="images/icons/confirm-password_icon.svg" alt="" class="form__input-icon">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-auto">
+              <input
+                class="form__input"
+                type="email"
+                placeholder="Email"
+                required
+              >
+              <img src="images/icons/email_icon.svg" alt="" class="form__input-icon">
+            </div>
+            <div class="col-12 col-md-auto">
+              <input
+                class="styled-checkbox"
+                id="styled-checkbox"
+                type="checkbox"
+                value="value4"
+              >
+              <label for="styled-checkbox" class="styled-checkbox__text">
+                I agree to the
+                <a href="#" class="">
+                  Terms & Conditions
+                </a>
+              </label>
+            </div>
+          </div>
+          <button class="form__button">
+            Sign Up
+          </button>
+        </div>
       </form>
       <div class="registration__text-log-in">
         <p>
           If you have an account,
-          <a href="">
+          <a href="#">
             Log In
           </a>
         </p>
