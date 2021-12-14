@@ -1,16 +1,106 @@
 .registration {
-  padding-top: 220px;
-  height: 100%;
+  position: relative;
+  padding-top: 110px;
+  height: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-              url(/images/img-bgs/bg-2.jpg);
+  url(/images/img-bgs/bg-2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  overflow: hidden;
+
+  @media (min-width: 576px) {
+    height: 100%;
+    padding-top: 220px;
+  }
+
+  &__bg-forms {
+    &-1 {
+      position: absolute;
+      width: 60px;
+      height: 84px;
+      top: 13.6%;
+      left: -4.5%;
+      background-image: url(/images/bg-forms/section_2-svg_1.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-width: 576px) {
+        width: 138px;
+        height: 194px;
+        top: 45%;
+        left: -2%;
+      }
+    }
+
+    &-2 {
+      position: absolute;
+      width: 114px;
+      height: 91px;
+      top: 1%;
+      right: -9.5%;
+      background-image: url(/images/bg-forms/section_2-svg_2.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-width: 576px) {
+        width: 220px;
+        height: 174px;
+        top: 17%;
+        right: -4.5%;
+      }
+    }
+
+    &-3 {
+      position: absolute;
+      width: 107px;
+      height: 107px;
+      right: -9%;
+      bottom: -1.5%;
+      background-image: url(/images/bg-forms/section_2-svg_3.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-width: 576px) {
+        width: 186px;
+        height: 186px;
+        right: 22%;
+        bottom: -3.5%;
+      }
+    }
+  }
 
   &__title {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 55px;
+    text-align: center;
+    font-size: 19px;
+    width: 329px;
+    margin-bottom: 30px;
+
+    @media (min-width: 576px) {
+      width: auto;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__text-log-in {
+    left: 0;
+    margin-bottom: 60px;
+    transform: translateX(23%);
+    font-size: 15px;
+    font-weight: 300;
+    color: #e0e0e0;
+
+    @media (min-width: 576px) {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

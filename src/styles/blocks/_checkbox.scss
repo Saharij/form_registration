@@ -6,12 +6,13 @@
     position: relative;
     cursor: pointer;
     padding: 0;
+    margin-left: 17px;
+    line-height: 56px;
   }
 
-  // Box.
   & + label:before {
     content: '';
-    margin-right: 10px;
+    transform: translateX(-55%);
     display: inline-block;
     vertical-align: text-top;
     width: 20px;
@@ -21,23 +22,19 @@
     border-radius: 3px;
   }
 
-  // Box hover
   &:hover + label:before {
     background: #6ceec7;
   }
 
-  // Box checked
   &:checked + label:before {
     background: #6ceec7;
   }
 
-  // Disabled state label.
   &:disabled + label {
     color: #6ceec7;
     cursor: auto;
   }
 
-  // Checkmark. Could be replaced with an image
   &:checked + label:after {
     content: '';
     position: absolute;
@@ -53,7 +50,7 @@
       4px -4px 0 white,
       4px -6px 0 white,
       4px -8px 0 white;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translate(250%, 950%);
   }
 
   &__text {

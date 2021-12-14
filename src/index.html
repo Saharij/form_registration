@@ -23,8 +23,8 @@
       <div class="header__bg-forms-1"></div>
       <div class="header__bg-forms-2"></div>
       <div class="header__bg-forms-3"></div>
-      <div class="header__logo">
-        <img src="./images/logo.svg" alt="">
+      <div class="header__logo-container">
+        <img src="./images/logo.svg" alt="" class="header__logo">
       </div>
       <h1 class="header__title">
         Find the
@@ -44,6 +44,9 @@
   </section>
   <section class="registration" id="registration">
     <div class="registration__container">
+      <div class="registration__bg-forms-1"></div>
+      <div class="registration__bg-forms-2"></div>
+      <div class="registration__bg-forms-3"></div>
       <h2 class="registration__title">
         <span class="green">
           Sign Up
@@ -52,33 +55,36 @@
       </h2>
       <form
         action=""
+        id="form"
         class="registration__form form"
       >
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-auto" >
               <input
-                class="form__input"
                 type="text"
+                id="1"
+                class="form__input"
+                name="first_name"
                 placeholder="First name"
-                required
                 style="padding: 0 50px;"
               >
               <img src="images/icons/first-name_icon.svg" alt="" class="form__input-icon">
             </div>
             <div class="col-12 col-md-auto">
               <input
-                class="form__input"
+                id="2"
                 type="text"
+                name="last_name"
+                class="form__input"
                 placeholder="Second name"
-                required
               >
               <img src="images/icons/second-name_icon.svg" alt="" class="form__input-icon">
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="col-12 col-md-auto">
-              <select class="form__select">
+              <select class="form__select" name="country" required>
                 <option value="0">Country</option>
                 <option value="1">Afghanistan</option>
                 <option value="2">Albania</option>
@@ -96,13 +102,15 @@
                 <option value="14">United Kingdom</option>
                 <option value="15">United States of America</option>
               </select>
+              <img src="images/icons/country_icon.svg" alt="" class="form__input-icon">
             </div>
             <div class="col-12 col-md-auto">
               <input
-                class="form__input"
                 type="tel"
+                id="3"
+                name="phone"
+                class="form__input"
                 placeholder="Phone"
-                required
               >
               <img src="images/icons/phone_icon.svg" alt="" class="form__input-icon">
             </div>
@@ -110,19 +118,21 @@
           <div class="row justify-content-center">
             <div class="col-12 col-md-auto">
               <input
-                class="form__input"
                 type="password"
+                id="password"
+                name="password"
+                class="form__input"
                 placeholder="Password"
-                required
               >
               <img src="images/icons/password_icon.svg" alt="" class="form__input-icon">
             </div>
             <div class="col-12 col-md-auto">
               <input
-                class="form__input"
                 type="password"
+                id="confirmPassword"
+                name="confirm_password"
+                class="form__input"
                 placeholder="Confirm password"
-                required
               >
               <img src="images/icons/confirm-password_icon.svg" alt="" class="form__input-icon">
             </div>
@@ -130,21 +140,25 @@
           <div class="row justify-content-center">
             <div class="col-12 col-md-auto">
               <input
-                class="form__input"
                 type="email"
+                id="6"
+                name="email"
+                class="form__input"
                 placeholder="Email"
-                required
               >
               <img src="images/icons/email_icon.svg" alt="" class="form__input-icon">
             </div>
-            <div class="col-12 col-md-auto">
+            <div class="col-12 col-md-auto reg-check">
               <input
-                class="styled-checkbox"
-                id="styled-checkbox"
                 type="checkbox"
-                value="value4"
+                name="agree"
+                id="styled-checkbox"
+                class="styled-checkbox"
               >
-              <label for="styled-checkbox" class="styled-checkbox__text">
+              <label
+                for="styled-checkbox"
+                class="styled-checkbox__text"
+              >
                 I agree to the
                 <a href="#" class="">
                   Terms & Conditions
@@ -157,8 +171,8 @@
           </button>
         </div>
       </form>
-      <div class="registration__text-log-in">
-        <p>
+      <div class="registration__container-log-in">
+        <p class="registration__text-log-in">
           If you have an account,
           <a href="#">
             Log In
@@ -167,5 +181,8 @@
       </div>
     </div>
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
